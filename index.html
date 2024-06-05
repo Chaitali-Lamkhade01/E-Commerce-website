@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Commerce-Website</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/Shoppee-header.css">
+    <link rel="stylesheet" href="styles/pages/Shoppee.css">
+  </head>
+  <body>
+    <div class="Shoppee-header">
+      <div class="Shoppee-header-left-section">
+        <a href="index.html" class="header-link">
+          <img class="Shoppee-logo"
+            src="./images/shoppee_logo.png">
+          <!-- <img class="Shoppee-mobile-logo"
+            src="images/amazon-mobile-logo-white.png"> -->
+        </a>
+      </div>
+
+      <div class="Shoppee-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="Shoppee-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+    
+    
+           
+      <div class="products-grid js-product-grid">        
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="backtop">
+          <span>Back to Top</span>
+      </div>
+      <div class="detail">
+          <div class="table">
+              <div>
+                  <div class="t-head">Get to Know Us</div>
+                  <ul>
+                      <li>Careers</li>
+                      <li>Blogs</li>
+                      <li>About Shoppee</li>
+                      <li>Investor Relations</li>
+                      <li>Shoppee Advices</li>
+                      <li>Shoppee Science</li>
+                  </ul>
+              </div>
+          
+              <div>
+                  <div class="t-head">Make Money with Us</div>
+                  <ul>
+                      <li>Sell Products on Shoopee</li>
+                      <li>Sell on Shoppee Business</li>
+                      <li>Sell Apps on Shoppee</li>
+                      <li>Become an Affiliate</li>
+                      <li>Advertise your Products</li>
+                      <li>Host an Shoppee Hub</li>
+                  </ul>
+              </div>
+          
+         
+              <div>
+                  <div class="t-head">Shoppee Payment Products</div>
+                  <ul>
+                      <li>Shoppee Business Cards</li>
+                      <li>Shop with Points</li>
+                      <li>Reload your Balance</li>
+                      <li>Shoppee Currency Converter</li>
+                  </ul>
+              </div>
+          
+          
+              <div>
+                  <div class="t-head">Let Us Help You</div>
+                  <ul>
+                      <li>Shoppee and COVID-19</li>
+                      <li>Your Account</li>
+                      <li>Yoyr Orders</li>
+                      <li>Shipping Rates and Policies</li>
+                      <li>Returns and Replacements</li>
+                      <li>Manage your Content & Devices</li>
+                      <li>Shoppee Assistant</li>
+                      <li>Help</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="line"></div>
+      <div class="copy">
+          <span>&copy; Designed by Chaitali Lamkhade</span>
+      </div>
+  </section>
+
+    <script type="module" src="scripts/amazon.js"></script>
+  </body>
+</html>
