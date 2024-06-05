@@ -1,0 +1,329 @@
+body {
+  font-family: Roboto, Arial;
+  color: rgb(33, 33, 33);
+  /* The <body> element has a default margin of 8px
+     on all sides. This removes the default margins. */
+  margin: 0;
+}
+
+/* <p> elements have a default margin on the top
+   and bottom. This removes the default margins. */
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+input, select, button {
+  font-family: Roboto, Arial;
+}
+
+.button-primary {
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-primary:hover {
+  background-color: rgb(247, 202, 0);
+  border: 1px solid rgb(242, 194, 0);
+}
+
+.button-primary:active {
+  background: rgb(255, 216, 20);
+  border-color: rgb(252, 210, 0);
+  box-shadow: none;
+}
+
+.button-secondary {
+  color: rgb(33, 33, 33);
+  background: white;
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-secondary:hover {
+  background-color: rgb(247, 250, 250);
+}
+
+.button-secondary:active {
+  background-color: rgb(237, 253, 255);
+  box-shadow: none;
+}
+
+/* These styles will limit text to 2 lines. Anything
+   beyond 2 lines will be replaced with "..."
+   You can find this code by using an A.I. tool or by
+   searching in Google.
+   https://css-tricks.com/almanac/properties/l/line-clamp/ */
+.limit-text-to-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  color: rgb(196, 80, 0);
+}
+
+/* Styles for dropdown selectors. */
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
+}
+
+.footer{
+  width:100%;
+  height:450px;
+  transition: all 0.2s;
+}
+.backtop{
+  text-align: center;
+  height:50px;
+  background-color: #37475a;
+  padding:15px;
+  cursor: pointer;
+}
+.backtop span{
+  color:white;
+  font-weight: bold;
+}
+.backtop:hover{
+  background-color: #4d627c;
+}
+.detail{
+  background-color: #232f3e;
+  height:375px;
+}
+.table{
+  margin:0 150px;
+  height:100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top:50px;
+}
+.table div{
+  width:230px;
+}
+.t-head{
+  font-size: 16px;
+  color:white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.table li{
+  color: rgb(223,221,221);
+  padding-top:10px;
+  font-weight: lighter;
+  list-style: none;
+  font-size: 14px;
+}
+.copy{
+  background-color: #232f3e;
+  height: 90px;
+  padding:40px;
+  text-align: center;
+}
+.copy span{
+  color:white;
+  font-size: 14px;
+}
+.line{
+  height:0.4px;
+  width:100%;
+  background-color: rgb(172,172,172);
+}
+
+.sidebar{
+  background-color: white;
+  width:330px;
+  height:100%;
+  transform: translateX(-390px);
+  transition: all 0.5s;
+  height:100%;
+  position:absolute;
+  z-index:101;
+  overflow-y: scroll;
+  box-shadow: 2px 2px 30px black;
+}
+.hdn-head{
+  background-color: #232f3e;
+  height:60px;
+  width:100%;
+  color:white;
+  text-align: center;
+}
+.hdn-head h2{
+  line-height: 60px;
+}
+.hdn-content h3{
+  padding:20px 25px;
+  color:rgb(39,39,39);
+}
+.hdn-content ul div{
+  display: flex;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: rgb(70,70,70);
+  font-size: 14px;
+  padding:15px 25px;
+  justify-content: space-between;
+}
+.fa-xmark {
+  top:20px;
+  left:350px;
+  position:absolute;
+  display: none;
+  font-size: 30px;
+  z-index:101;
+  cursor: pointer;
+}
+.fa-angle-right{
+  color:rgb(27,27,27);
+}
+.hdn-content ul div:hover{
+  background-color: rgb(230,227,227);
+}
+.hdn-content ul{
+  padding-bottom: 9px;
+}
+.black{
+  height:100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+
+}
+.black.active{
+  width:100%;
+  z-index: 100;
+}
+.black.active-1{
+  top:70px;
+  width:100%;
+  z-index:99;
+}
+.sidebar.active{
+  transform: translateX(0);
+}
+.fa-xmark.active{
+  display: block;
+}
+.hdn-sign.active{
+  display: block;
+}
+.triangle.active{
+  display: block;
+}
+.triangle{
+  position:absolute;
+  z-index:101;
+  display:none;
+  right:210px;
+  top:42px;
+  background-color: transparent;
+  width:0;
+  height:0;
+  display:none;
+  transition:all 2s;
+  border:10px solid blue;
+  border-color: transparent transparent white transparent;
+}
+.hdn-sign{
+  position: absolute;
+  z-index:101;
+  transition: all 2s;
+  display: none;
+  width:500px;
+  height: 350px;
+  top:60px;
+  right:80px;
+  background-color: white;
+  border-radius: 5px;
+}
+.hdn-table{
+  display: flex;
+  justify-content: space-around;
+  padding:20px 0;
+}
+.hdn-table h3{
+  font-size: 16px;
+  padding:10px 0;
+}
+.hdn-table li{
+  color: rgb(84,84,84);
+  font-size: 13px;
+  padding:5px 0;
+  cursor: pointer;
+}
+.hdn-line{
+  width:0.5px;
+  color:black;
+  background-color: rgb(190,190,190);
+  height:280px;
+}
+.stop-scroll{
+  overflow: hidden;
+  height:100%;
+}
+
+body
+{
+    margin: 0;
+}
+#containerSlider
+{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+#containerSlider img
+{
+    width: 100%;
+    height: 140%;
+    text-align: center;
+    align-content: center;
+}
+@media(max-width: 732px)
+{
+    #containerSlider img
+    {
+        height: 12em;
+    }
+}
+@media(max-width: 500px)
+{
+    #containerSlider img
+    {
+        height: 10em;
+    }
+}
