@@ -108,7 +108,7 @@ input:focus {
 .backtop{
   text-align: center;
   height:50px;
-  background-color: #37475a;
+  background-color: #747577;
   padding:15px;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@ input:focus {
   background-color: #4d627c;
 }
 .detail{
-  background-color: #232f3e;
+  background-color: #101215;
   height:375px;
 }
 .table{
@@ -147,7 +147,7 @@ input:focus {
   font-size: 14px;
 }
 .copy{
-  background-color: #232f3e;
+  background-color: #12161c;
   height: 90px;
   padding:40px;
   text-align: center;
