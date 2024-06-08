@@ -1,4 +1,4 @@
-.Shoppee-header {
+.Shopee-header {
   background-color: rgb(19, 25, 33);
   color: white;
   padding-left: 15px;
@@ -13,12 +13,12 @@
   height: 60px;
 }
 
-.Shoppee-header-left-section {
+.Shopee-header-left-section {
   width: 180px;
 }
 
 @media (max-width: 800px) {
-  .Shoppee-header-left-section {
+  .Shopee-header-left-section {
     width: unset;
   }
 }
@@ -36,28 +36,28 @@
   border: 1px solid white;
 }
 
-.Shoppee-logo {
+.Shopee-logo {
   width: 100px;
   margin-top: 5px;
 }
 
-.Shoppee-mobile-logo {
+.Shopee-mobile-logo {
   display: none;
 }
 
 @media (max-width: 575px) {
-  .Shoppee-logo {
+  .Shopee-logo {
     display: none;
   }
 
-  .Shoppee-mobile-logo {
+  .Shopee-mobile-logo {
     display: block;
     height: 35px;
     margin-top: 5px;
   }
 }
 
-.Shoppee-header-middle-section {
+.Shopee-header-middle-section {
   flex: 1;
   max-width: 850px;
   margin-left: 10px;
@@ -94,7 +94,7 @@
   margin-top: 3px;
 }
 
-.Shoppee-header-right-section {
+.Shopee-header-right-section {
   width: 180px;
   flex-shrink: 0;
   display: flex;
